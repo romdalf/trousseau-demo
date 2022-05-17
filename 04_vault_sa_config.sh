@@ -1,3 +1,4 @@
+clear
 echo "---> To run where kubectl has access to k8s cluster"
 echo "---> Recover Configuration parameter to enable k8s auth in Vault"
 echo "---> Getting VAULT_SA_NAME"
@@ -19,3 +20,4 @@ echo vault write auth/kubernetes/config token_reviewer_jwt="\"$SA_JWT_TOKEN\"" k
 echo 
 echo "/!\ If kubernetes_host is https://127.0.0.1:6443 - replace it with your k8s cluster API endpoint URL"
 echo 
+echo "end of 04_vault_sa_config.sh" 

@@ -1,3 +1,4 @@
+clear
 echo "---> To run where kubectl has access to k8s cluster"
 echo "---> Replace an existing secret pre- Trousseau deployment"
 echo "---> Check recorded secret-pre-deploy payload within ETCD"
@@ -17,3 +18,4 @@ echo
 echo "/!\ All pre-existing secrets can be replaced with Trousseau encrypted one"
 echo "CLI: kubectl get secrets -A -o json |kubectl replace -f -"
 echo 
+echo "end of 09_secret_replace.sh" 

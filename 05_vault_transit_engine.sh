@@ -1,3 +1,4 @@
+clear
 echo "---> To run where vault has access to Vault cluster"
 echo "---> Enable Vault Transit Engine Service"
 echo "CLI: vault secrets enable transit"
@@ -59,3 +60,5 @@ vault write auth/kubernetes/role/trousseau \
         bound_service_account_namespaces=kube-system \
         policies=trousseau-kv-ro \
         ttl=24h
+echo 
+echo "end of 05_vault_transit_engine.sh"

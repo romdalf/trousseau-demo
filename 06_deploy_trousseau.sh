@@ -1,3 +1,4 @@
+clear
 echo "---> To run where kubectl has access to k8s cluster"
 echo "---> Create a ConfigMap to recover Transit Engine config"
 echo "CLI: cat trousseau-configmap.yaml"
@@ -16,4 +17,5 @@ echo "---> Check Trousseau Pod creation"
 echo "CLI: kubectl get pods -A|grep vault"
 echo "/!\ CTRL+C to break the command"
 kubectl get pods -A -w|grep vault
-
+echo 
+echo "end of 06_deploy_trousseau.sh"

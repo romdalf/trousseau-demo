@@ -1,3 +1,4 @@
+clear 
 echo "---> To run where kubectl has access to k8s cluster"
 echo "---> Create the EncryptionConfiguration manifest on k8s"
 echo "CLI: cat vault-kms-encryption-config.yaml"
@@ -9,3 +10,5 @@ cp vault-kms-encryption-config.yaml /var/lib/rancher/rke2/server/cred/vault-kms-
 echo "---> Restart the k8s api-server to acknowledge the change"
 echo "CLI: systemctl restart rke2-server"
 systemctl restart rke2-server
+echo 
+echo "end of 07_enable_trousseau.sh"
