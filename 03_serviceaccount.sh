@@ -1,7 +1,7 @@
 echo "---> To run where kubectl has access to k8s cluster"
 echo "---> Create a ServiceAccount to connect to Vault"
 echo "CLI: kubectl -n kube-system create serviceaccount vault-auth"
-echo kubectl -n kube-system create serviceaccount vault-auth
+kubectl -n kube-system create serviceaccount vault-auth
 echo 
 echo "---> Create the RBAC rules linked to the ServiceAccount"
 echo "CLI: cat vault-auth-serviceaccount.yaml"
