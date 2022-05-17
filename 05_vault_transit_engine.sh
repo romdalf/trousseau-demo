@@ -28,6 +28,7 @@ echo "CLI: vault token create -policy=trousseau-transit-ro"
 vault token create -policy=trousseau-transit-ro
 echo "---> Copy/Paste the TOKEN"
 read TROUSSEAU_TOKEN
+echo $TROUSSEAU_TOKEN
 echo 
 echo "---> Create a Vault Secret for Trousseau configuration"
 echo "CLI: vault policy write trousseau-kv-ro - <<EOF
