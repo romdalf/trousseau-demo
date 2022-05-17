@@ -15,7 +15,7 @@ export K8S_HOST=$(kubectl config view --raw --minify --flatten \
 echo 
 echo "---> To run where vault has access to Vault cluster"
 echo "CLI: vault auth enable kubernetes"
-echo "CLI: vault write auth/kubernetes/config token_reviewer_jwt="\"$SA_JWT_TOKEN\"" kubernetes_ca_cert="\"$SA_CA_CRT\"" issuer="\"https://kubernetes.default.svc.cluster.local\"" kubernetes_host="https://tdevk8s-01.trousseau.io:6443""
+echo vault write auth/kubernetes/config token_reviewer_jwt="\"$SA_JWT_TOKEN\"" kubernetes_ca_cert="\"$SA_CA_CRT\"" issuer="\"https://kubernetes.default.svc.cluster.local\"" kubernetes_host=\"https://tdevk8s-01.trousseau.io:6443\"
 echo 
 echo "/!\ If kubernetes_host is https://127.0.0.1:6443 - replace it with your k8s cluster API endpoint URL"
 echo 
