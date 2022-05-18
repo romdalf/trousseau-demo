@@ -26,7 +26,7 @@ path "transit/decrypt/trousseau-kms-vault" {
    capabilities = [ "update" ]
 }
 EOF
-sleep 10
+sleep 5
 clear
 echo "---> Create a dedicated Vault Token for Trousseau"
 echo "CLI: vault token create -policy=trousseau-transit-ro"
@@ -46,7 +46,7 @@ path "secret/data/trousseau/*" {
     capabilities = ["read", "list"]
 }
 EOF
-sleep 10 
+sleep 5
 clear
 echo "---> Store the configuration to the KV store"
 echo "CLI: vault kv put /secret/trousseau/config transitkeyname=trousseau-kms-vault \
