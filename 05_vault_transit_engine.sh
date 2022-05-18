@@ -1,4 +1,6 @@
 clear
+export VAULT_ADDR=http://tdevhvc-01.trousseau.io:8200
+export VAULT_TOKEN=trousseau-demo
 echo "---> To run where vault has access to Vault cluster"
 echo "---> Enable Vault Transit Engine Service"
 echo "CLI: vault secrets enable transit"

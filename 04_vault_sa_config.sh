@@ -1,4 +1,6 @@
 clear
+export VAULT_ADDR=http://tdevhvc-01.trousseau.io:8200
+export VAULT_TOKEN=trousseau-demo
 echo "---> To run where kubectl has access to k8s cluster"
 echo "---> Recover Configuration parameter to enable k8s auth in Vault"
 echo "---> Getting VAULT_SA_NAME"
