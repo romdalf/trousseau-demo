@@ -6,6 +6,7 @@ kubectl -n kube-system create serviceaccount vault-auth
 echo 
 echo "---> Create the RBAC rules linked to the ServiceAccount"
 echo "CLI: cat vault-auth-serviceaccount.yaml"
+echo
 cat vault-auth-serviceaccount.yaml
 echo 
 echo "---> Apply ServiceAccount RBAC rules on k8s"

@@ -2,6 +2,7 @@ clear
 echo "---> To run where kubectl has access to k8s cluster"
 echo "---> Create the EncryptionConfiguration manifest on k8s"
 echo "CLI: cat vault-kms-encryption-config.yaml"
+echo
 cat vault-kms-encryption-config.yaml
 echo 
 echo "---> Push the EncryptionConfiguration manifest on k8s"
