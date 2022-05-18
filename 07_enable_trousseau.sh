@@ -10,6 +10,6 @@ cp vault-kms-encryption-config.yaml /var/lib/rancher/rke2/server/cred/vault-kms-
 echo "---> Restart the k8s api-server to acknowledge the change"
 echo "CLI: systemctl restart rke2-server"
 systemctl restart rke2-server
-wait 30
+sleep 30s
 echo 
 echo "end of 07_enable_trousseau.sh"
